@@ -1,0 +1,81 @@
+body {
+
+background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
+height: 100vh;
+background-size:cover;
+justify-content: center;
+display: flex;
+align-items: center;
+overflow:hidden;
+
+}
+
+.night {
+height:50vh;
+width:40vw;
+margin:4rem auto;
+background:url('../Image/eutxxA.png');
+padding-bottom: 80px;
+background-size:cover;
+position:relative;
+box-shadow:1px 2px 60px rgba(56, 5, 77, 0.4);
+overflow-x: hidden;
+
+
+}
+
+.surface {
+height: 30px;;
+width:500%;
+background:url('../Image/road5.jpg');
+display: block;
+position: absolute;
+bottom:0%;
+left:0;
+background-repeat: repeat-x;
+background: #170220;
+
+}
+
+
+.light{
+    position: absolute;
+    bottom:0%;
+    left:100%;
+    animation: moveRight 3s linear infinite;
+
+
+}
+
+
+
+
+
+.car{
+    position: absolute;
+    bottom:1%;
+    left:32%;
+    animation: suspension 1s linear infinite;
+
+}
+
+
+/* Animation */
+@keyframes moveRight {
+    100%{transform:translateX(-60vw)}
+
+
+}
+
+@keyframes suspension{
+100%{
+    transform: translateY(-2px);
+}
+50%{
+transform: translate(3px);
+
+}
+0%{
+transform: translateY(-2px);
+}
+}
