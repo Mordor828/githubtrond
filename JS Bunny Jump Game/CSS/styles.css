@@ -1,0 +1,28 @@
+body {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 75vh;
+    overflow: hidden;
+    align-items: center;
+
+}
+#canvas1 {
+
+position: absolute;
+/*
+top: 50%;
+left: 50%;*/
+transform: translate(-50%, -50);
+border: 5px solid white;
+
+
+
+}
+
+#playerImage, #backgroundImage, #enemyImage {
+display: none;
+
+
+}
