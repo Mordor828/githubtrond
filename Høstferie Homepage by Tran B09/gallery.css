@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital@1&family=Mukta:wght@300;400&family=Oswald&family=Young+Serif&display=swap");
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(136, 18, 77) 0%,
+    rgb(86, 7, 102) 100%,
+    rgb(54, 52, 52) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  animation: transitionIn 1s;
+}
+
+.container {
+  height: 100%;
+  width: 100vh;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  animation: transitionIn 1s;
+}
+
+.navbar {
+  overflow: hidden;
+  padding-top: 20px;
+  animation: transitionIn 1s;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-right: 15px;
+  animation: transitionIn 1s;
+}
+
+li {
+  float: left;
+  padding-bottom: 20px;
+  animation: transitionIn 2s;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Comic Neue", cursive;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 20px;
+  transition: color 0.4s ease;
+}
+
+li a:hover {
+  color: rgb(67, 78, 231);
+}
+
+hr {
+  margin-top: 80px;
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(245, 243, 240),
+    rgba(255, 255, 255, 0)
+  );
+  animation: transitionIn 1s;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 800px;
+  position: relative;
+  top: 22%;
+}
+
+.carousel .carousel__item,
+.carousel .carousel__item--hidden {
+  display: none;
+}
+
+.carousel .carousel__item img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.carousel .carousel__item--visible {
+  display: block;
+  animation: transitionIn 1s;
+}
+
+.carousel .carousel__actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel__actions button {
+  border-radius: 50px;
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel__actions button#carousel__button--prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel__actions button#carousel__button--next {
+  margin-right: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 75px;
+  animation: transitionIn 1s;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: transitionIn 1s;
+}
+
+.socials li {
+  margin: 0 10px;
+}
+
+.socials a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.socials a i {
+  font-size: 30px;
+  transition: color 0.1s ease;
+}
+.socials a:hover {
+  color: rgb(216, 27, 27);
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  font-family: "Comic Neue", cursive;
+  word-spacing: 3px;
+  text-transform: capitalize;
+  padding-top: 5px;
+  color: #d6d6d4;
+  animation: transitionIn 1s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: opacity linear;
+  }
+}
